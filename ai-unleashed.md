@@ -13,8 +13,13 @@ Written by [Lianna Novitz](https://www.linkedin.com/in/liannanovitz/), with guid
 	[Linux](https://github.com/AUTOMATIC1111/stable-diffusion-webui#automatic-installation-on-linux)
 	**Important**: if you run into any errors, raise your hand, ask a question in the Zoom chat! No one left behind during the install process!
 	**Note**: if you're in-person and finding the download is slow, you can also grab one of the USB sticks. Lianna has pre-downloaded the files for you into the folder `sdui` using the command below:
-	 `git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui /Volumes/USB20FD/sdui` 
+	 `git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui /Volumes/USB20FD/sdui`
 4. Navigate into the newly created folder `sdui` (or it might be called `stable-diffusion-ui`)
+
+   The inside of the folder should look like below (~ 7GB total)
+   
+   ![Screenshot 2023-12-10 at 11 39 57 PM](https://github.com/lnovitz/worksheets/assets/32498202/c6ff909d-9eb7-493a-817b-6d4f02ed5a1d)
+
 	If you know your computer is powerful (i.e. [graphics card has at least 4GB of VRAM, 12 GB or more install space](https://www.digitaltrends.com/computing/stable-diffusion-pc-system-requirements/)), you can simply run `./webui.sh`
 	Otherwise, try the following command per your OS:
 	MacOS: `./webui.sh --opt-split-attention-v1` `--medvram`
