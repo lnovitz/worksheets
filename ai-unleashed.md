@@ -5,7 +5,7 @@ Written by [Lianna Novitz](https://www.linkedin.com/in/liannanovitz/), with guid
 **Start**
 
 1. Open your `terminal` application. [Tips on opening terminal](https://www.ionos.com/help/email/troubleshooting-mail-basicmail-business/access-the-command-prompt-or-terminal/)
-2. Download `git`, if you don't have it. [Tips on installling git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+2. Download `git`, if you don't have it. [Tips on installing git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 **Note**: you can run `git --version` in the commandline to see if `git` is already installed.
 
