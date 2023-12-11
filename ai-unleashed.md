@@ -23,7 +23,7 @@ Written by [Lianna Novitz](https://www.linkedin.com/in/liannanovitz/), with guid
  
 A new window should pop up that looks like this (minus a weird Einstein face)
 
-![Screenshot 2023-12-10 at 9 21 44 PM](https://github.com/lnovitz/worksheets/assets/32498202/ddd816bf-abf1-48e4-817a-82180a5925a2)
+![Screenshot 2023-12-10 at 8 55 11 PM](https://github.com/lnovitz/worksheets/assets/32498202/d058569b-71ca-4531-aa3e-babc9aaf3018)
 
 **Exercise 1** - `text2img` 
 1. Confirm that `text2img` tab is selected at the top of the window. To the left of the orange button "Generate", type the positive prompt that we decided on as a group (or use `Einstein standing on top of a Christmas tree carrying a sleeping purring cute cat in his arms`)
