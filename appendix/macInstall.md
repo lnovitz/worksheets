@@ -40,6 +40,29 @@ Cool! Now you have the UI software but now we need to get Stable Diffusion Model
 
 You can take your pick at the different versions of Stable Diffusion models available. Some are optimized to be leaner and meaner and work on different kinds of computers. 
 
-* The files are going to have the `.ckpt` file format which stands for "checkpoint"  (You'll hear people saying "download checkpoint" or "download a model") _There's a fun [reddit discussion](https://www.reddit.com/r/StableDiffusion/comments/12dunfr/what_is_inside_a_checkpoint_file/) on what is inside a checkpoint file on `/r/StableDifussion_
+### About the Checkpoint file format
+
+The Stable Diffusion [files on Hugging Face](https://huggingface.co/models?pipeline_tag=text-to-image&sort=downloads) are going to have the `.ckpt` file format which stands for "checkpoint"  
+
+You'll hear people saying "download checkpoint" or "download a model") 
+
+_There's a fun [reddit discussion](https://www.reddit.com/r/StableDiffusion/comments/12dunfr/what_is_inside_a_checkpoint_file/) on what is inside a checkpoint file on `/r/StableDifussion_
+
+### Download the Actual File
+
+* Go to https://huggingface.co/models?pipeline_tag=text-to-image&sort=downloads
+* Click a model
+* Click on `Files and Versions` header
+* Search for files with `.ckpt` or `.safetensors`
+* Click down arrow to the right to download them
+
+#### Popular Stable Diffusion Models
+
+Some popular official Stable Diffusion models are:
+
+* [Stable Diffusion 1.4](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original) ([sd-v1-4.ckpt](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/resolve/main/sd-v1-4.ckpt))
+* [Stable Diffusion 1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5) ([v1-5-pruned-emaonly.ckpt](https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt))
+* [Stable Diffusion 1.5 Inpainting](https://huggingface.co/runwayml/stable-diffusion-inpainting) ([sd-v1-5-inpainting.ckpt](https://huggingface.co/runwayml/stable-diffusion-inpainting/resolve/main/sd-v1-5-inpainting.ckpt))
 
 Source: [Downloading Stable Diffusion Models](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Installation-on-Apple-Silicon#downloading-stable-diffusion-models)
+
