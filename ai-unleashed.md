@@ -2,7 +2,7 @@ Written by [Lianna Novitz](https://www.linkedin.com/in/liannanovitz/), with guid
 * [TroubleChute's COMPLETE CRASH COURSE](https://www.youtube.com/watch?v=k-M_bUatcBc)
 * [AI Tools Search AUTOMATIC1111 FULL TUTORIAL](https://www.youtube.com/watch?v=hwsvcbFeUTs)
 
-**Start**
+# Start
 
 1. Open your `terminal` application. [Tips on opening terminal](https://www.ionos.com/help/email/troubleshooting-mail-basicmail-business/access-the-command-prompt-or-terminal/)
 2. Download `git`, if you don't have it. [Tips on installling git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
@@ -40,7 +40,7 @@ A new window should pop up that looks like this (minus a weird Einstein face).  
 
 ![Screenshot 2023-12-10 at 8 55 11 PM](https://github.com/lnovitz/worksheets/assets/32498202/d058569b-71ca-4531-aa3e-babc9aaf3018)
 
-**Exercise 1** - `text2img` 
+# Exercise 1 - `text2img` 
 1. Confirm that `text2img` tab is selected at the top left of the window. To the left of the orange button "Generate", type the positive prompt that we decided on as a group (or use `Einstein standing on top of a Christmas tree carrying a sleeping purring cute cat in his arms`)
 2. Click the orange button "Generate".
 3. If you're not seeing results after about a minute and a moving progress bar, consider restarting the application with the `medvram` (or `lowvram`) arguments mentioned in Step 2 above. To restart, click into your Terminal app and type `Ctrl+C` to stop the application. 
@@ -51,7 +51,7 @@ A new window should pop up that looks like this (minus a weird Einstein face).  
 Note: If you're still experiencing a lot of slowness, consider pairing up with a neighbor to pair program together on their (hopefully faster) computer.
 *Does this answer annoy you?* The problem is that Stable Diffusion requires a lot of computer brain - there are services online where you can pay for computer brain like https://beta.dreamstudio.ai/generate - but since we're using Stable Diffusion locally on our own computers, we have only our own computer brain to rely on.
 
-**Exercise 2** - `img2img` 
+# Exercise 2 - `img2img` 
 1. Confirm that `img2img` tab is selected at the top of the window. Below the prompt text boxes, select `Generation > Inpaint sketch`. 
 2. Click on `Click to upload` and upload the image we generated from Exercise 1
    
@@ -65,3 +65,23 @@ Note: If you're still experiencing a lot of slowness, consider pairing up with a
    
 6. In the positive prompt text box, add something like `green animated pants` and click `Generate` 
 7. Again, tweak the prompts until you're happy, continuously refining the generated image. For each exercise you might have to click `Generate` 10 or so times with slight prompt tweaking to get what you want.
+
+# Additional Resources
+
+## Extensions
+Now that you have installed Stable Diffusion, you can leverage its rich library of extensions to access more dynamic features:
+- Control Net: Use reference images to control the composition and pose of people in your generated images [youtube tutorial](https://www.youtube.com/watch?v=mmZSOBSg2E4)
+- After Detailer [details](https://stable-diffusion-art.com/automatic1111-extensions/#After_Detailer) or Ultimate SD Upscale [details](https://stable-diffusion-art.com/automatic1111-extensions/#Ultimate_SD_Upscale) for upscaling 512x512 images to larger resolutions
+- Roop [details](https://stable-diffusion-art.com/automatic1111-extensions/#Roop) for inserting a face from a photo into your generated image
+
+## Development
+You can also develop with the Automatic1111 API available [here](http://127.0.0.1:7860/docs) when Stable Diffusion is running with commandline `--api` or see this [API Example](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/API).
+If you want to build your own application using the power of Stable Diffusion, you can create one using the Diffusers [library](https://github.com/huggingface/diffusers) which can be as easy as:
+```python
+from diffusers import DiffusionPipeline
+import torch
+
+pipeline = DiffusionPipeline.from_pretrained("runwayml/stable-diffusion-v1-5", torch_dtype=torch.float16)
+pipeline.to("cuda")
+pipeline("Einstein standing on top of a Christmas tree carrying a sleeping purring cute cat in his arms").images[0]
+```
